@@ -1,0 +1,62 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.welcome {
+  flex: 0 0 200rpx;
+  font-size: 46rpx;
+  color: #555;
+  line-height: 200rpx;
+  padding-left: 50rpx;
+}
+.login-body {
+  flex: 1 1 auto;
+  padding: 0 60rpx;
+}
+.input-item {
+  padding: 0 30rpx;
+  background: #f8f6fc;
+  height: 120rpx;
+  border-radius: 4px;
+  margin-bottom: 50rpx;
+}
+.input-item .label {
+  height: 50rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  color: #606266;
+}
+.input-item input {
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #303133;
+  width: 100%;
+}
+.login-body .forget-password {
+  font-size: 28rpx;
+  color: #4399fc;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.login-body .login-btn {
+  width: 630rpx !important;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50rpx;
+  margin-top: 70rpx;
+  background: #d43c33;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 0;
+}
+.sign {
+  flex: 0 0 100rpx;
+  font-size: 28rpx;
+  color: #606266;
+  text-align: center;
+}
+.sign .sign-link {
+  color: #4399fc;
+  margin-left: 10rpx;
+}

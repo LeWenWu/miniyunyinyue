@@ -1,0 +1,30 @@
+<view>
+    <view class="recommend-header">
+        <image src="{{ newSong.coverUrl || '../../static/images/personal/bgImg.jpg'}}" />
+        <view class="date">
+            <text class="day">01</text>
+            <text class="month">/04</text>
+        </view>
+    </view>
+    <view class="recommend-content">
+        <view class="tool-btns">
+            <view class="left">
+                <text class="iconfont icon-bofang"></text>
+                <text class="bofang-text">播放全部</text>
+            </view>
+            <text class="iconfont icon-bofang"></text>
+        </view>
+        <scroll-view scroll-y class="recommend-list">
+            <view class="recommend-item" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+                <image src="{{recommendItem.al.picUrl}}" />
+                <view class="song-info">
+                    <text class="name">{{recommendItem.name}}</text>
+                    <text class="author">{{recommendItem.ar[0].name}}</text>
+                </view>
+                <view class="operation-btns" data-song="{{recommendItem}}" bindtap="toSongDetail">
+                    <text class="iconfont icon-bofang"></text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

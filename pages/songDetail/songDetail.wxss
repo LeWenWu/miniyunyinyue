@@ -1,0 +1,120 @@
+.songDetailPage {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.songDetailPage,
+.author,
+.recordContainer,
+.contorlContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.author {
+  flex: 0 0 60rpx;
+  line-height: 60rpx;
+}
+.recordContainer {
+  flex: 1 1 auto;
+}
+.contorlContainer {
+  flex: 0 0 260rpx;
+}
+.needle {
+  position: relative;
+  z-index: 99;
+  top: 20rpx;
+  left: 60rpx;
+  width: 192rpx;
+  height: 274rpx;
+  transform-origin: 40rpx 0;
+  transform: rotate(-20deg);
+}
+/* 摆针旋转 */
+.needleRotate {
+  transform: rotate(0deg);
+}
+.discContainer {
+  position: relative;
+  top: -110rpx;
+  width: 598rpx;
+  height: 598rpx;
+}
+.discContainer .disc {
+  width: 598rpx;
+  height: 598rpx;
+}
+.discContainer .musicImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 370rpx;
+  height: 370rpx;
+  margin: auto;
+  border-radius: 50%;
+}
+.discAnimation {
+  animation: disc 4s linear infinite;
+  animation-delay: 1s;
+}
+/* 唱片旋转 */
+@keyframes disc {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.progressControl {
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+.progressControl .progressBar {
+  width: 450rpx;
+  height: 4rpx;
+  background: rgba(0, 0, 0, 0.4);
+  margin: auto;
+  position: relative;
+}
+.audio-currentTime-Bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 4rpx;
+  background: red;
+}
+/* 小圆球 */
+.audio-circle {
+  position: absolute;
+  right: -12rpx;
+  top: -4rpx;
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+.musicControl {
+  border-top: 1rpx solid #fff;
+  width: 100%;
+  display: flex;
+  margin-top: 40rpx;
+}
+.musicControl text {
+  width: 20%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 50rpx;
+}
+.musicControl .big {
+  font-size: 80rpx;
+}

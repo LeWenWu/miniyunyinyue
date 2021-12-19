@@ -1,0 +1,92 @@
+/* pages/video/video.wxss */
+.video-search {
+  display: flex;
+  padding: 10rpx;
+}
+.video-search image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.video-search .search-tip {
+  flex: 1 1 auto;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.video-nav-scroll {
+  display: flex;
+  white-space: nowrap;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.nav-item {
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+.nav-item-content {
+box-sizing: border-box;
+height: 60rpx;
+}
+.nav-item-content.active {
+  border-bottom: 1rpx solid #d43c33;
+}
+
+/* 视频区域 */
+.video-scroll {
+  margin-top: 10rpx;
+  height: calc(100vh - 150rpx);
+}
+.video-item {
+  padding: 0 3%;
+}
+.video-item video {
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.video-item .common {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+.video-item .video-content {
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+.footer .creator image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.footer .creator .nick-name {
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.footer>view {
+  display: flex;
+  align-items: center;
+}
+.operation .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+.operation .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}

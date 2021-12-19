@@ -1,0 +1,84 @@
+.recommend-header {
+  position: relative;
+  width: 100%;
+  height: 350rpx;
+}
+.recommend-header image {
+  height: 100%;
+  width: 100%;
+}
+.recommend-header .date {
+  position: absolute;
+  bottom: 45rpx;
+  left: 30rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.recommend-header .date .day {
+  font-size: 60rpx;
+}
+.recommend-content .tool-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+}
+.recommend-content .tool-btns .iconfont {
+  font-size: 45rpx;
+}
+.recommend-content .tool-btns .left {
+  display: flex;
+}
+.recommend-content .tool-btns .left .iconfont {
+  margin-right: 15rpx;
+}
+.recommend-content .tool-btns,
+.recommend-content .recommend-list .recommend-item {
+  padding: 0 25rpx;
+}
+
+/* 列表 */
+.recommend-list {
+  height: calc(100vh - 450rpx);
+}
+.recommend-item {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.recommend-item image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  flex: 0 0 80rpx;
+}
+.recommend-item .song-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15rpx;
+  width: calc(100% - 180rpx);
+}
+.song-info .name,
+.song-info .author {
+  max-width: 100%;
+  word-break: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.song-info .name {
+  font-size: 32rpx;
+}
+.song-info .author {
+  font-size: 24rpx;
+  color: #666;
+}
+.recommend-item .operation-btns {
+  flex: 0 0 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+}
+.recommend-content .operation-btns .iconfont {
+  font-size: 40rpx;
+}
